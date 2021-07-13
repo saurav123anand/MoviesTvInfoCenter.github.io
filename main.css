@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(to right,#183d51,#112b39 60%,#0c1f29);
+    background-repeat: no-repeat;
+    filter: none;
+    border: 1px solid rgba(0,0,0,.6);
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 30%);
+    min-height: 100vh;
+    box-shadow:inset 10px 10px 40px #021620;
+    -webkit-box-shadow:inset 10px 10px 140px 80px #021620;
+    color: #fff;
+    
+}
+@keyframes animate{
+    from{
+        background-image: linear-gradient(#183d51,#112b39 60%,#0c1f29);
+    }
+    to{
+        background-image: linear-gradient(#224d66,#234d64 60%,#3791c2);
+    }
+}
+li{
+    list-style: none;
+    padding: 3px;
+    cursor: default;
+}
+.form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    padding:16px 23px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-image: linear-gradient(to right,#183d51,#112b39 60%,#0c1f29);
+    background-repeat: no-repeat;
+    margin-bottom: 52px;
+box-shadow: 7px 13px 59px 8px rgba(7,80,119,0.81);
+-webkit-box-shadow: 7px 13px 59px 8px rgba(7,80,119,0.81);
+-moz-box-shadow: 7px 13px 59px 8px rgba(7,80,119,0.81);
+
+}
+.nav{
+    text-decoration: none;
+    color: #218fca;
+    font-size: 30px;
+    display: inline-block;
+    padding-left: 34px;
+}
+.form .logo{
+    width:60px;
+    cursor: pointer;
+}
+img{
+    width:500px;
+}
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 45px 20px;
+}
+.container h3{
+    font-size: 23px;
+    margin-top: 12px;
+    color: #218fca;
+}
+.hero_right{
+    padding-left: 17px;
+}
+.container p{
+    margin-top: 12px;
+    color: #218fca;
+}
+.box{
+    box-shadow: 0 4px 55px #021620;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 8px;
+    box-shadow: 0 0 30px rgb(5, 5, 5);
+    cursor: pointer;
+    width: 290px;
+}
+.movie_image{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+@media only screen and (max-width:598px){
+    .container{
+       flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:16px 20px;
+    }
+    .hero_right{
+        padding-left: 0px;
+    }
+}
